@@ -1,19 +1,41 @@
+# ========================
+# MAVEN / BUILD
+# ========================
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-.kotlin
+build/
+*.log
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# ========================
+# MAVEN WRAPPER
+# ========================
+!.mvn/wrapper/maven-wrapper.jar
+
+# ========================
+# JAVA
+# ========================
+*.class
+
+# ========================
+# IntelliJ IDEA
+# ========================
+.idea/
 *.iml
 *.ipr
+*.iws
+out/
 
-### Eclipse ###
+# ========================
+# NetBeans
+# ========================
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ========================
+# Eclipse / STS
+# ========================
 .apt_generated
 .classpath
 .factorypath
@@ -22,18 +44,28 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# ========================
+# VS Code
+# ========================
 .vscode/
 
-### Mac OS ###
+# ========================
+# OS
+# ========================
 .DS_Store
+Thumbs.db
+
+# ========================
+# SECURITY (MUY IMPORTANTE)
+# ========================
+.env
+*.env
+application.properties
+application.yml
+secrets.yml
+
+# ========================
+# TEMP FILES
+# ========================
+*.tmp
+*.swp
